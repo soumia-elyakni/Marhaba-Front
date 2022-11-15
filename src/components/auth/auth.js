@@ -30,18 +30,15 @@ const Auth = () => {
            
         <div className="col-sm-6 form">
                 {/* <Login/> */}
-   <BrowserRouter>
       <Routes>
-        
-   
+
           <Route path="/auth" element={<Signup />} />
-          <Route path="/auth/login" element={<Login />} />
-          <Route path="/auth/signup" element={<Signup />} />
+          <Route path="auth/login" element={<Login />} />
+          <Route path="auth/signup" element={<Signup />} />
           {/* <Route path="/*" element={<Error />} /> */}
    
         
       </Routes>
-    </BrowserRouter>
         </div>
         </div>
         </>
@@ -49,6 +46,6 @@ const Auth = () => {
 }
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Auth />);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<Auth />);
 export default Auth; 
