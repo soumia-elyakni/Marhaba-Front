@@ -38,7 +38,7 @@ const Signup = ()=> {
 
    <div className="CTA">
       <input type="submit" value="Signup Now" id="submit"/>
-      <a href="/login" className="switch">I have an account</a>
+      <link to="login" className="switch">I have an account</link>
    </div>
 </form>
 </div>
