@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Auth from './components/auth/auth';
+// import Auth from './components/auth/auth';
 import Login from './components/auth/login/login';
 import Signup from './components/auth/signup/signup';
 import Error from './components/Error/error404';
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Login/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          {/* <Route path="/*" element={<Error />} /> */}
+          <Route path="/*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
